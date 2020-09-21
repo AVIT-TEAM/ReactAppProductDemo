@@ -7,7 +7,7 @@ function ProductTable(props) {
   let lastCategory = null;
 
   props.products.foreEach((product) => {
-    if (product.category != lastCategory) {
+    if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
           category={product.category}

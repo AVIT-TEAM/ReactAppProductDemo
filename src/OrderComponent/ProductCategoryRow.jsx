@@ -5,7 +5,7 @@ function ProductCategoryRow(props) {
 
   return (
     <tr>
-      <th colSpan="2">{props.category}</th>
+      <th colSpan="2">{product.category}</th>
     </tr>
   );
 }
