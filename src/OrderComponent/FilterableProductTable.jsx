@@ -1,8 +1,9 @@
 import React from "react";
 import SearchBar from "./SearchBar";
 import ProductTable from "./ProductTable";
+import "./FilterableProductTable.css";
 
-function FilterableProdutTable(props) {
+function FilterableProductTable(props) {
   return (
     <div>
       <SearchBar />
@@ -11,4 +12,4 @@ function FilterableProdutTable(props) {
   );
 }
 
-export default FilterableProdutTable;
+export default FilterableProductTable;

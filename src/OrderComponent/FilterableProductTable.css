@@ -1,0 +1,19 @@
+table,
+form {
+  width: 500px;
+  margin: 0px auto;
+}
+
+form input[type="text"] {
+  width: 100%;
+}
+
+table th {
+  width: 50%;
+  background-color: aqua;
+}
+
+table td {
+  width: 50%;
+  background-color: aquamarine;
+}

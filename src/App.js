@@ -1,10 +1,10 @@
 import React from "react";
 //import logo from "./logo.svg";
 import "./App.css";
-import FilterableProdutTable from "./OrderComponent/FilterableProdutTable";
+import FilterableProductTable from "./OrderComponent/FilterableProductTable";
 
 function App() {
-  const PRODUCTS = [
+  const products = [
     {
       category: "Sporting Goods",
       price: "49.99",
@@ -38,7 +38,7 @@ function App() {
     },
   ];
 
-  return <FilterableProdutTable>{PRODUCTS}</FilterableProdutTable>;
+  return <FilterableProductTable products={products}></FilterableProductTable>;
 }
 
 export default App;

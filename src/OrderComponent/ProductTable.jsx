@@ -3,10 +3,11 @@ import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from "./ProductRow";
 
 function ProductTable(props) {
+  console.log(props);
   const rows = [];
   let lastCategory = null;
 
-  props.products.foreEach((product) => {
+  props.products.map((product) => {
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
