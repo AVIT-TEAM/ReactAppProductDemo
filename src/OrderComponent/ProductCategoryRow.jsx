@@ -1,11 +1,13 @@
 import React from "react";
 
 function ProductCategoryRow(props) {
-  const product = props.category;
+  const category = props.category;
 
   return (
     <tr>
-      <th colSpan="2">{product.category}</th>
+      <th align="left" colSpan="2">
+        {category}
+      </th>
     </tr>
   );
 }

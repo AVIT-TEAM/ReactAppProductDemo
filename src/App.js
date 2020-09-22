@@ -20,7 +20,7 @@ function App() {
     {
       category: "Sporting Goods",
       price: "29.99",
-      stocked: true,
+      stocked: false,
       name: "Basketball",
     },
     { category: "Electronics", price: "899.99", stocked: true, name: "iPad" },
@@ -33,7 +33,7 @@ function App() {
     {
       category: "Electronics",
       price: "199.99",
-      stocked: true,
+      stocked: false,
       name: "Galaxi S20",
     },
   ];

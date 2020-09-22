@@ -7,6 +7,7 @@ function ProductRow(props) {
   ) : (
     <span style={{ color: "red" }}>{product.name}</span>
   );
+
   return (
     <tr>
       <td>{name}</td>
