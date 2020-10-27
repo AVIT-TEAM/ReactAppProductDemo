@@ -3,11 +3,17 @@ import ProductCategoryRow from "./ProductCategoryRow";
 import ProductRow from "./ProductRow";
 
 function ProductTable(props) {
-  console.log(props);
   const rows = [];
   let lastCategory = null;
 
   props.products.map((product) => {
+    if (product.name.indexOf(filterText) === -1) {
+      return;
+    }
+    if (inStockOnly && !product.stocked) {
+      return;
+    }
+
     if (product.category !== lastCategory) {
       rows.push(
         <ProductCategoryRow
